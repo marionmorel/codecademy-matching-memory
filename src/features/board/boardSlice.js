@@ -94,3 +94,4 @@ const initialState = [
   }
   
   // Add selector export statments below  
+  export const selectBoard = (state) => state.board.map(card => ({id: card.id, contents: card.contents}));
